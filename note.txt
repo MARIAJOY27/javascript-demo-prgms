@@ -1,0 +1,62 @@
+Javascript
+----------
+Javascript can be used in both frontend and backend
+frontend - it gives behaviour
+backend - to perform logical operations.
+-single thread programming language - line by line execution
+-dynamically typed language - dataType changes
+
+Javascript is compiled using node
+extension  .js
+
+to display content - console.log()
+
+
+data types - total no:of datatypes is 8
+----------
+1)string - placed inside single or double quotes
+2)boolean - returns true or false
+3)number 
+
+method to check datatype - typeOf()
+
+
+concatenation - to join  same/different datatype contents
+-------------
+string + string = string
+string + number = string
+number + number = number
+
+variables
+---------
+- used to store data 
+- to create variables  - set of rules ,ie..identifiers
+  1) start with letter , dollar ,underscore - preffered is letter
+  2) subsequent characters can be letters, digits , underscore etc....
+  3) if there is more than 1 word 
+      - second word can be started with capital letter
+      - use underscore btw the words
+      - no space btw the words
+
+  variableName = value
+
+  keyword variableName = value
+
+  keyword - set of reserved words which gives a special meaning to variables
+          - cannot be used as variableName, function name etc...
+
+   1) const - its value dows not change - reassigning is not possible
+   2) var(global access) - value changes throughout - reassigning is  possible . Hoisting is possible.
+   3) let - reassigning is possible - accessible inside a block , hoisting is not possible 
+
+   hoisting - using of variables before it is declared/created.        
+
+
+   template literals
+   -----------------
+   way of displaying contents.
+   `content ${variable}`
+
+
+   operator
+   --------
