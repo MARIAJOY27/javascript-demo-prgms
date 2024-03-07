@@ -1,3 +1,8 @@
+PROCEDURAL PROGRAMMING 
+----------------------
+- programming paradigm where series of computational steps are carried out.Unlike oops,where data and methods were tied together(encapsulated) in a class or object,procedural programming uses data and methods as 2 different entities.
+
+
 Javascript
 ----------
 Javascript can be used in both frontend and backend
@@ -17,6 +22,7 @@ data types - total no:of datatypes is 8
 1)string - placed inside single or double quotes
 2)boolean - returns true or false
 3)number 
+4)object dataType
 
 method to check datatype - typeOf()
 
@@ -45,7 +51,7 @@ variables
   keyword - set of reserved words which gives a special meaning to variables
           - cannot be used as variableName, function name etc...
 
-   1) const - its value dows not change - reassigning is not possible
+   1) const - its value does not change - reassigning is not possible
    2) var(global access) - value changes throughout - reassigning is  possible . Hoisting is possible.
    3) let - reassigning is possible - accessible inside a block , hoisting is not possible 
 
@@ -58,5 +64,284 @@ variables
    `content ${variable}`
 
 
-   operator
+   Operators
    --------
+   1) Assignment operator - represented by =
+   2) Arithmetic operator
+      addition - +
+      subtraction --> -
+      division - /
+      multiplication - *
+      modulus - %
+      exponent - **
+   3) Relational operators - will return boolean values
+      > , >= , < , <= , == , ===
+      = - just assign the content
+      == - compare the value
+      === - compare the value and the dataType, then return boolean
+   4) Logical operators - joins 2 or more relational operators
+      -AND (&&)
+        T && T = true
+        T && F = false
+        F && T = false
+        F && F - false
+      -OR (||)
+        T || T = true
+        T || F = true
+        F || T = true
+        F || F - false
+      -NOT (!)  
+        !T = F
+        !F = T
+   5) Increment(++)/Decrement(--) operator    
+       x=10
+       x++ = 10+1 = 11
+       x-- = 10-1 = 9 
+   6) Shorthand operator
+      x=x+y => x+=y    
+      x=x-y => x-=y
+   7) Ternary operator 
+      condition ? true-statement : false-statement   
+
+
+Conditional statements/Decision making statements
+-------------------------------------------------
+1) if else
+     if(condition){
+         true
+         statement
+     }
+     else if(){
+      if more conditions to check
+     }
+     else{
+          false
+          statement
+     }  
+
+
+Looping statements
+------------------
+- to do tasks repeatedly
+ 1)while loop 
+   syntax
+   ------
+   variable initialization
+   while(condition){
+       task 
+       condition to exit the loop(increment/decrement)
+   }
+
+ 2) for loop
+    syntax
+    ------  
+    for(variable initialization ; condition ; exit condition){
+        statement
+    }
+    
+    nested loop - loop inside another loop
+
+Math.floor - removes decimal point   
+
+
+Functions
+---------
+- perform same task repeatedly at different locations.
+functions have 2 parts
+1)Normal function
+   function definition
+   - define the task
+   - syntax
+     function function_name( arg1,......argn){
+          task
+     }
+
+     arg - arguments which are values
+   
+   function call
+   - to execute the task
+   - syntax
+     function_name(arg1...,argn)
+
+functional hoisting - calling a function before it is defined/declared
+functional hoisting is possible in normal functions.
+
+-variables inside a function is of block-level scope,ie,cannot be accessed outside the function
+-if it must be accessed somehow,then that variable must be returned
+-no statement declared after return statement will be executed,ie,return statement should always be the last statement in a function.
+
+2)Arrow function
+  syntax
+  ------
+  keyword variable = (arg1,....argn)=>{
+     curly brackets required if there is more than 1 statements. if single statement only,write if after arrow
+  }
+  variable()
+
+3) Predefined Functions
+   already defined by the developers
+   eg:console.log() ,number(),typeOf(), math.floor(), parseInt(),alert()
+
+4) Call back function
+   -a function calling another function is called callback function.
+
+   setTimeOut - a predefined method and also a callback function that provides time delay
+
+5) Asynchronous function
+   -those functions which has time delay.eg:setTimeOut(), api calls
+
+6) Synchronous function
+   -those functions which has no time delay  
+   eg console.log()    
+
+7) Nested functions
+   - function definition inside another function  
+
+   closure property - In nested functions,properties inside parent function can be accessed in child function but properties of child function cannot be accessed in parent function 
+
+
+   DATA STRUCTURE
+   --------------
+   -specialized format of organizing,processing,storing and retrieving data.
+   eg: array , list , linkedlist , stack , queue , tree , graph...
+
+   Array 
+   -----
+   - Unlike variables, arrays can store more than 1  data/values
+   -array can store more than 1 data types
+   - definition - array is a single variable which can store more than 1 values of different datatypes that are seperated by comas and enclosed within square brackets.
+   -store in key:value pairs
+     key : index position
+     value : data
+
+     index - indicates the position of elements in an array.
+     index value starts from 0 to (array length-1)
+
+     length is the number of items/data inside the array. starts from 1
+
+     Array represention/syntax
+     -------------------------
+     keyword variable = [item1,.......itemn]
+
+     Array in Javascript is infinite
+
+     Array operations
+     ----------------
+     1)push() - to add data to an array at the end 
+     2) unshift() - add item to array at starting position
+     3)pop() - to remove an item from the array from the end
+     4)shift() - remove item at the start of the array
+     5)sort() - to arrange array in ascending/descending order.
+     6)forEach() - to access each items from an array; it returns void
+     7)map(callback) - it creates a new array having same number of elements in the parent array
+     8)reduce(callback) - to get a single value from an array. eg:highest,lowest,sum
+     9)filter() - to create a new array having elements that satisfy a particular condition
+     10)flat() - to change the dimension of the array
+       if flat(infinite),will return the array to one dimension
+     11)some() - it returns boolean values based on a condition
+     12)find() - it returns the first value that satisfy a particular condition
+     13)includes() - returns boolean values based on items
+     14)indexOf() - to find the index of the item
+     15)splice() - to add or remove from a particular position in an array
+     16)reduceRight() - iteration starts from right 
+
+     Different ways of accessing array elements
+     ------------------------------------------
+     1) for loop 
+     2) for in - to access index positions
+     3) for of - to directly access the values
+
+     binary search reduces execution time compared to linear search,ie,gives more performance and reduces time delay
+
+     in binary search
+     ----------------
+     - first perform sorting(ascending/descending), here ascending
+     -sorting done by predefined method sort()
+     - sort((a,b)=>a-b) --> ascending  here,a-b is a to b
+     - sort((a,b)=>b-a) --> descending  , b to a
+     -find mid index = ((first index+last index)/2)th number
+     - if search num>mid value ,set low=mid+1
+     - if search num<mid value, set up=mid-1
+     ie,
+       Algorithm
+     1) sort the given array
+     2) find the mid = (low+up)/2
+     3) mid == searchitem - found
+     4)if mid>searchitem,
+         up=mid-1
+     5) mid<searchitem,
+         low=mid+1
+     6) repeat until low=up      
+
+
+  Nested array - array within an array   
+
+  
+  String methods
+  --------------
+  1)toLowerCase() - convert the string into small letters
+  2)toUpperCase() - convert the string to capital letters
+  3)subString(start,end) - create a subString which excludes the end index. if u want the entire string till the end index,specify only the start index
+  4)startsWith() - checks whether the given string starts with the particular character specified in the brackets and returns boolean values,
+       - it is case sensitive
+  5)endsWith() -  checks whether the given string ends with the particular character specified in the brackets and returns boolean values,
+       - it is case sensitive     
+  6)trim() - it removes space at the start and end of the string
+  7)split() - used to split the given string
+  8)Array.from() - same as split()   
+  9)replace() - replaces the first string in the text ;case sensitive
+  10)replaceAll() - replaces all strings in the text  case sensitive
+  11)slice(start,end) - The slice() method returns selected elements in an array, as a new array.
+
+  Objects
+  -------
+  - object is used to store more than one value with more clarity to the data.
+  Syntax :
+    objectName = {
+      key:value,.....     //object dataType
+      keyn:valuen
+    }
+    - to access particular value => objectName["key"] or objectName.key
+    - objectName["key"] - 
+
+
+    operations
+    ----------
+    1) Add an item
+        i) objectName["key"] = value
+        ii)object.assign(target,{key:value})
+
+    2) Delete
+        delete objectName.key
+
+    3) Update
+        objectName["key"]=value
+
+    4) get 
+        i) objectName[key] = key variable
+           objectName["key"] = exact key
+        ii)objectName.key - exact key
+
+
+     in - to access key   
+     spread operator - (...) at prog86.js
+
+
+
+OBJECT ORIENTED PROGRAMMING(OOPS)
+---------------------------------
+ It is a modern programming paradigm(style) which consider real time entity int objects and class.
+
+ basic
+ -----
+  1)Class - blue print which contains common features from which different objects can be created
+  2)object - is the real time entity created from the class
+  3)reference - memory locations 
+
+  methods - functions inside a class
+  property - variables inside a class
+  constructor - is used to initialize the property
+              - it is also a method which will be  called/invoked automatically.
+   - not mandatory to give all the above 3
+
+   instance variable - this keyword is used to access properties inside the class
